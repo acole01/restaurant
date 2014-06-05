@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+div{
+	background: rgba(33, 63, 154, .5);
+	display:block;
+}
+	
+#container{
+	width: 900px;
+	margin:auto;
+}
+
+.header{
+	height: 200px;	
+}
+.logo{
+	position:relative;
+	height: 100%;
+	width: 60%;
+	/*^^^change to px value when have image*/
+	background: red;
+	display:inline-block;
+}
+.topnav{
+	height:inherit;
+position:relative;
+}
+.sectionlinks{
+	position:absolute;
+	float:left;
+	bottom: 0;
+}
+.linksocial{
+	float:right;
+}
+.footer{
+}
+	
+	

@@ -1,40 +1,92 @@
 @charset "utf-8";
 /* CSS Document */
+img{
+	width:100%;
+}
 
 div{
-	background: rgba(33, 63, 154, .5);
+	/*
+background: rgba(33, 63, 154, .5);
 	display:block;
+*/
 }
 	
+/*
 #container{
 	width: 900px;
 	margin:auto;
 }
+*/
 
 .header{
-	height: 200px;	
+	position: relative;
+	height: 200px;		
+	overflow: hidden; 
+	border-bottom: 1px solid white;
 }
+.header-bg{	
+	
+	height: 230px;
+	background:red url("../img/salad");
+	/*
+-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+  	-o-filter: blur(5px);
+  	-ms-filter: blur(5px);
+  	filter: blur(5px);
+*/
+	}
 .logo{
-	position:relative;
-	height: 100%;
-	width: 60%;
-	/*^^^change to px value when have image*/
-	background: red;
-	display:inline-block;
+	position: absolute;
+	top: 0;
+	left:0;
+	height: inherit;
+	display: table-row;
+}
+.address{
+	display: table-row;
+	position: absolute;
+	bottom: 0;
+	background: brown;
 }
 .topnav{
-	height:inherit;
-position:relative;
+	/*
+position:  relative;
+	float: right;
+*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: inherit;
+	color: white;
+	border-left: 1px solid white;
+
 }
 .sectionlinks{
+	margin-left: 10px;
 	position:absolute;
 	float:left;
+	line-height: 2em;
 	bottom: 0;
 }
 .linksocial{
 	float:right;
 }
-.footer{
+.linksocial li {
+		display: inline;
 }
-	
-	
+/*  end header */
+.main-content{
+	margin-top: 40px;
+}
+.bigimg{
+	background: yellow;
+	height: 200px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	height: 120px;
+	width: auto;
+	background: brown;
+}	

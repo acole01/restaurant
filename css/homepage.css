@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+
+
 img{
 	width:100%;
 }
@@ -23,7 +25,7 @@ background: rgba(33, 63, 154, .5);
 */
 
 h2 {
-	font-size: 42px;
+	font-size: 42px !important;
 	text-transform: uppercase;
 	width: auto;
 	text-align: center;
@@ -36,9 +38,9 @@ h2 {
 .sectionlinks{
 	position:fixed;
 	top: 0;
+	left: 50%;
 	width: 15%;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
+	margin-left: -7.5% ;
 	list-style: none;
 	color: white;
 	background: black;
@@ -56,22 +58,36 @@ h2 {
 	display: block;
 }
 .home{
+	position: relative;
 	background-color: blue;
+	
 }
 
 .glow {
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 	background-color: red;
 	border-radius: 100px;
 	background-size:cover;
+	-webkit-filter: blur(100px);
 	}
 
 .title{
+	top: 50%;
+	left:0;
+	width:100%;
+	position: absolute;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 80px;
 	font-weight: 700;
 	text-shadow: white 4px 4px 0, red 7px 4px 40px ;
+	-webkit-transform: translateY(-50%);
 	text-align: center;
+	z-index: 100;
 }
 .linksocial{
 	text-align: center;
@@ -123,10 +139,16 @@ h2 {
 	display: block;
 /* 	border: 1px solid black; */
 	/* width: 500px; */
-	height:500px;
+	min-height:500px;
 	overflow: auto;
 	background-size: cover; 
+	padding: 10px 20px;
 }
+
+.menu-list {
+	padding-left: 0;
+}
+
 .menu-list columns{
 	margin-top: 0;
 }
@@ -140,6 +162,13 @@ h2 {
 	position: relative;
 	text-align: left;
 }
+
+@media screen and (max-width: 767px) {
+	.menu-list {
+		width: 100% !important;
+	}
+}
+
 .dish-heading {
 	white-space: nowrap;
 	margin: 0;
@@ -171,7 +200,7 @@ h2 {
 	line-height: 36px;
 	font-weight: 300;
 }
-#beersnacks {
+#beersnacks, #salthouse, #butcherscuts {
 	background-image: url('../img/snacks.jpg');
 }
 
@@ -179,7 +208,7 @@ h2 {
 	background-image: url('../img/salad.jpg');
 }
 
-#sausages, #varieties {
+#sausages, #varieties, #sandwiches {
 	background-image: url('../img/sausage.jpg');
 }
 .info p {

@@ -180,24 +180,22 @@ h2 {
 	text-decoration: none;
 }
 .dish-desc {
-	border-top: white 1px dotted;
+	border-bottom: white 1px dotted;
 	position: relative;
 	margin: 0;
 	top: -7px;
-	width: 90%;
 	font-weight: 300;
 	font-size: 12px;
-	line-height: 12px;
+	line-height: 14px;
 	text-transform: uppercase;
 }
 .dish-price{
 	position: absolute;
 	text-align: right;
 	margin: 0;
-	top: 0;
+	bottom: 3px;
 	right: 0;
 	font-size: 24px;
-	line-height: 36px;
 	font-weight: 300;
 }
 #beersnacks, #salthouse, #butcherscuts {

@@ -3,12 +3,17 @@
 img{
 	width:100%;
 }
+body{
+	background-color: #ddcf65;
+}
 
+/*
 div{
 	
 background: rgba(33, 63, 154, .5);
 	display:block;
 }
+*/
 	
 /*
 #container{
@@ -16,9 +21,66 @@ background: rgba(33, 63, 154, .5);
 	margin:auto;
 }
 */
+
+h2 {
+	font-size: 42px;
+	text-transform: uppercase;
+	width: auto;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-shadow: white 2px 2px 0;
+	color: #000;
+}
+
+.sectionlinks{
+	position:fixed;
+	top: 0;
+	width: 15%;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	list-style: none;
+	color: white;
+	background: black;
+	z-index: 100;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+}
+.sectionlinks li{
+	display: inline-block;
+	padding: 0;
+	margin-right: 10px;
+}
+.sectionlinks a{
+	display: block;
+}
+.home{
+	background-color: blue;
+}
+
+.glow {
+	background-color: red;
+	border-radius: 100px;
+	background-size:cover;
+	}
+
+.title{
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80px;
+	font-weight: 700;
+	text-shadow: white 4px 4px 0, red 7px 4px 40px ;
+	text-align: center;
+}
+.linksocial{
+	text-align: center;
+}
 .linksocial li {
 	list-style: none;
 	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .linksocial a{
 	display: block;
@@ -36,25 +98,9 @@ background: rgba(33, 63, 154, .5);
 .instagram {
 	background-position-y: -144px;
 }
-.sectionlinks{
-	position:fixed;
-	top: 0;
-	margin: auto;
-	list-style: none;
-	color: white;
-	background: black;
-}
-.sectionlinks li{
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-}
-.sectionlinks a{
-	display: block;
-}
+
 .fullscreen{
 	min-height: 480px;
-	background: yellow;
 }
 .header{
 	position: relative;
@@ -62,62 +108,80 @@ background: rgba(33, 63, 154, .5);
 	overflow: hidden; 
 	border-bottom: 1px solid white;
 }
+#menu{
+	top:0;
+}
+.menu{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+}
 .menu li{
 	list-style: none;
+	color: white;
 }
 .menu-section{
 	display: block;
-	border: 1px solid black;
+/* 	border: 1px solid black; */
 	/* width: 500px; */
 	height:500px;
 	overflow: auto;
+	background-size: cover; 
+}
+.menu-list columns{
+	margin-top: 0;
 }
 .menu-heading{
-	font-family: 'montserrat', sans-serif;
-	font-size: 36px;
+	font-size: 30px;
+	font-weight: bold;
 	text-transform: uppercase;
+	text-align: center;
 }
 .menu-item{
 	position: relative;
+	text-align: left;
 }
 .dish-heading {
+	white-space: nowrap;
 	margin: 0;
 	width: 90%;
-	font-family: 'montserrat', sans-serif;
 	font-size: 24px;
 	line-height: 36px;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 .dish-desc {
+	border-top: white 1px dotted;
 	position: relative;
 	margin: 0;
 	top: -7px;
 	width: 90%;
-	font-family: 'montserrat', sans-serif;
+	font-weight: 300;
 	font-size: 12px;
 	line-height: 12px;
 	text-transform: uppercase;
 }
 .dish-price{
 	position: absolute;
+	text-align: right;
 	margin: 0;
 	top: 0;
 	right: 0;
-	width: 10%;
 	font-size: 24px;
 	line-height: 36px;
+	font-weight: 300;
 }
-.header-bg{	
-	
-	height: 230px;
-	background:red url("../img/salad");
-	/*
--webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-  	-o-filter: blur(5px);
-  	-ms-filter: blur(5px);
-  	filter: blur(5px);
+#beersnacks {
+	background-image: url('../img/snacks.jpg');
 }
-*/
-	
+
+ #salads, #hearth-vegetables {
+	background-image: url('../img/salad.jpg');
+}
+
+#sausages, #varieties {
+	background-image: url('../img/sausage.jpg');
+}
+.info p {
+	font-size: 20px;
+}	

@@ -6,7 +6,7 @@ img{
 	width:100%;
 }
 body{
-	background-color: #ddcf65;
+	background-color: #e6c679;
 }
 
 /*
@@ -17,12 +17,10 @@ background: rgba(33, 63, 154, .5);
 }
 */
 	
-/*
 #container{
-	width: 900px;
-	margin:auto;
+	position: relative;
+	padding-top: 60px;
 }
-*/
 
 h2 {
 	font-size: 42px !important;
@@ -36,18 +34,21 @@ h2 {
 }
 
 .sectionlinks{
-	position:fixed;
+	margin-top: 0 !important;
+	position: absolute;
 	top: 0;
 	left: 50%;
-	width: 15%;
+	width: auto;
 	margin-left: -7.5% ;
 	list-style: none;
+	padding: 10px 10px 10px 20px;
 	color: white;
 	background: black;
-	z-index: 100;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 18px;
+	font-size: 24px;
+	z-index: 200;
 }
 .sectionlinks li{
 	display: inline-block;
@@ -56,10 +57,11 @@ h2 {
 }
 .sectionlinks a{
 	display: block;
+	color: white;
 }
 .home{
 	position: relative;
-	background-color: blue;
+	background-color: transparent;
 	
 }
 
@@ -69,25 +71,33 @@ h2 {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: red;
+	background-color: #f8e29f;
 	border-radius: 100px;
 	background-size:cover;
 	-webkit-filter: blur(100px);
+	z-index: 0;
 	}
 
 .title{
+	position: absolute;
+	display: block;
+	margin-bottom: 0;
 	top: 50%;
 	left:0;
 	width:100%;
-	position: absolute;
-	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 80px;
 	font-weight: 700;
-	text-shadow: white 4px 4px 0, red 7px 4px 40px ;
+	text-shadow: white 4px 4px 0;
 	-webkit-transform: translateY(-50%);
 	text-align: center;
 	z-index: 100;
+}
+.subheader{
+	font-size: 16px;
+	font-weight: 300;
+	color: #6d491a;
+	text-shadow: none;
 }
 .linksocial{
 	text-align: center;
@@ -117,6 +127,7 @@ h2 {
 
 .fullscreen{
 	min-height: 480px;
+	margin-bottom: 60px;
 }
 .header{
 	position: relative;
@@ -146,7 +157,9 @@ h2 {
 }
 
 .menu-list {
+	display: inline-block;
 	padding-left: 0;
+	width: 40%;
 }
 
 .menu-list columns{
@@ -180,14 +193,20 @@ h2 {
 	text-decoration: none;
 }
 .dish-desc {
-	border-bottom: white 1px dotted;
 	position: relative;
 	margin: 0;
 	top: -7px;
+	max-width: 250px;
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 14px;
 	text-transform: uppercase;
+}
+.spacer{
+	border-bottom: white 1px dotted;
+	display: inline;
+	width: 100%;
+	height: 1px;
 }
 .dish-price{
 	position: absolute;
@@ -198,7 +217,7 @@ h2 {
 	font-size: 24px;
 	font-weight: 300;
 }
-#beersnacks, #salthouse, #butcherscuts {
+#beersnacks {
 	background-image: url('../img/snacks.jpg');
 }
 
@@ -206,9 +225,39 @@ h2 {
 	background-image: url('../img/salad.jpg');
 }
 
-#sausages, #varieties, #sandwiches {
+#sausages, #varieties {
 	background-image: url('../img/sausage.jpg');
 }
+#sandwiches {
+	background-image: url('../img/sandwich.jpg');
+}
+#salthouse, #butcherscuts {
+	background-image: url('../img/salthouse.jpg');
+}
+#on-the-side {
+	background-image: url('../img/side.jpg');
+}
+.infocontain {
+	border-radius: 100px;
+	padding: 5%;
+	background-color: #fff3e3;
+}
+.infoheader {
+	text-shadow: #8e482a 2px 2px 0 ;
+	margin-top: 0%;
+}
 .info p {
-	font-size: 20px;
+}
+.infotitle{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
 }	
+.footer{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+}

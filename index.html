@@ -42,13 +42,27 @@
 	   		<div class="glow"></div><!-- /.glow -->
 	       	<div class="title">
 		        	<p>PARTS & LABOR</p>
-		        	<p class="subheader">2600 N Howard st, Baltimore, MD 21218</p>
+		        	<div class="midbox columns fifteen">
+		        		<span style="float: left">Butchers
+		        		<p>Mon-Sun 7am-10pm</p>
+		        		</span> 
+		        		<span style="float:right">Restaurant
+		        		<p>Mon-Thu 5pm-10pm<br>
+						   Fri-Sat 5pm-11pm</p>
+		        		</span>
+		        	</div><!--/.midbox-->
+		        	<div class="clearfix"></div>
+		        	<div class="subheader">
+		        		2600 N Howard st, Baltimore, MD 21218<br>
+			        	443-873-8887
+		        	</div>
 		        	<ul class="linksocial">
 		                <li><a class="twitter" href="https://twitter.com/partslabor"></a></li>
 						<li><a class="facebook" href="https://www.facebook.com/pages/Parts-Labor/669500293094417"></a></li>
 		                <li><a class="instagram" href="http://instagram.com/partslabor"></a></li>
 					</ul>
-			</div>       		                              
+			</div><!--/.title-->    
+			<div class="clearfix"></div>   		                              
         </div><!--/.fullscreen home-->
         <div class="fullscreen menu" id="menu">
 		   <h2>menu</h2>
@@ -84,7 +98,7 @@
 				</div> <!-- /.menu-section "beer snacks"-->
 				<div class="menu-section" id="salthouse">
 					<h3 class="menu-heading">FROM THE SALT HOUSE TO SHARE</h3>
-			        <ul class="menu-list columns four">
+			        <ul class="menu-list ">
 			        		<li class="menu-item">
 			        			<h4 class="dish-heading">[meats list table]</h4>
 			        			<p class="dish-desc">Pick 3</p>
@@ -104,7 +118,7 @@
 				</div> <!-- /.menu-section "FROM THE SALT HOUSE TO SHARE"-->
 			    <div class="menu-section" id="salads">
 			     	<h3 class="menu-heading">SALADS</h3>
-				 	<ul class="menu-list columns four">
+				 	<ul class="menu-list ">
 			        	<li class="menu-item">
 			        		<h4 class="dish-heading">Spring Lettuces</h4>
 			        		<p class="dish-desc">radish, herbs, buttered croutons, spring garlic dressing</p>
@@ -124,7 +138,7 @@
 				</div> <!-- /.menu-section "salads"-->
 			    <div class="menu-section" id="butcherscuts">
 					<h3 class="menu-heading">DRY-AGED BUTCHER'S CUTS</h3>
-			        	<ul class="menu-list columns four">
+			        	<ul class="menu-list ">
 			        		<li class="menu-item">
 			        			<h4 class="dish-heading">Cattleman's</h4>
 			        			<p class="dish-desc">lean, knuckle, medium rare/medium</p>
@@ -246,7 +260,7 @@
 			        	<h3 class="menu-heading">
 			        		HEARTH VEGETABLES
 			        	</h3>
-			        	<ul class="menu-list columns four">
+			        	<ul class="menu-list ">
 			        		<li class="menu-item">
 			        			<h4 class="dish-heading">Griddled Potatoes</h4>
 			        			<p class="dish-desc"></p>
@@ -318,14 +332,19 @@
 					</div><!--/.infocontain-->
 	            </div><!--/.info-->
 	            <div class="fullscreen footer">
-		            <h3>Hours</h3>
-		            <p>Restaurant</p>
-		            <p>Mon-Thurs 5-10PM<br>
-			           Fri-Sat 5-11PM
-		            </p>
-		            <p>Butcher shop</p>
-		            <p>Mon-Sun 7-10</p>
-	            </div>
+	             	<div class="location "><h2 class="head">Location</h2>
+	             		<img src="img/map.jpg"><br>
+	             		2600 N Howard st, Baltimore, MD 21218
+	             	</div>
+		            <div class="hours"><h2 class="head">Hours</h2>		            
+		        		<h3>Butchers</h3>
+		        		<p>Mon-Sun 7am-10pm</p>
+		        		<h3>Restaurant</h3>
+		        		<p>Mon-Thu 5pm-10pm<br>
+						   Fri-Sat 5pm-11pm</p>
+					</div><!-- /.hours-->
+					<div class="clearfix"></div>       	
+	            </div><!-- /.fullscreen footer -->
         </div><!--/#.container-->
 
 
@@ -333,6 +352,17 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <!-- Load jQuery Plugins Here -->
+		<script src="js/vendor/jquery.scrollTo.min.js"></script>
+		<script src="js/vendor/jquery.localScroll.min.js"></script>
+		<script>
+			$(function (){
+				$('.sectionlinks').localScroll({
+					axis: 'y',
+					hash: true,
+				});
+			});
+		</script>
     
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
